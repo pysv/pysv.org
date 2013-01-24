@@ -2,19 +2,30 @@ The buildout configuration of the Python Software Verband Plone 4 Website
 
 ##Installation for Development
 
-### Use Plone Unified Installer to fill up the buildout cachel (to prevent hazzle with removed pypi packages):
-    $ wget https://launchpad.net/plone/4.2/4.2.3/+download/Plone-4.2.3-UnifiedInstaller.tgz
-    $ tar xfz Plone-4.2.3-UnifiedInstaller.tgz
-    $ rm Plone-4.2.3-UnifiedInstaller.tgz 
-    $ ./Plone-4.2.3-UnifiedInstaller/install.sh --target=<Pfadd> standalone 
-
+### Prerequisites
+- Python 2.7
+- virtualenv
+- libxslt-dev
 
 ### Checkout & Prepare Source
     $ git clone git@github.com:pysv/pysv_buildout.git
+    $ cd pysv_buildout/
+    $ virtualenv virt_env
+    $ source virt_env/bin/activate
     $ ln -s devel.cfg buildout.cfg
 
 ### Run bootstrap
+    $ python bootstrap.py
+    $ ./bin/develop co pysv.policy
+    $ mkdir -p downloads/dist
+    $ cd downloads/dist
+    $ wget http://www.majid.info/python/threadframe/threadframe-0.2.tar.gz
+    $ cd ../..
+    $ ./bin/buildout
 
 
 ### Start Plone
+    $ bin/instance fg
+
+[http://localhost:13090/](http://localhost:13090/)
 
