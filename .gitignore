@@ -33,3 +33,15 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# PyCharm
+.idea/
+
+# never commit buildout.cfg
+buildout.cfg
+
+# this is the env devoloper create, no need to store in git 
+virt_env/
+
+# is based on base.cfg initialisation
+src/pysv.policy/
