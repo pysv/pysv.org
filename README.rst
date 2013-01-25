@@ -17,6 +17,7 @@ Overview
 
 The current pysv_buildout tree
 ----------------------------------
+
 pysv_buildout:
 
     ├── README.md
@@ -75,7 +76,7 @@ bootstrap your buildout
 
 commands:
 
-    ./virt_env/bin/python2.7 bootstrap.py
+    ./virt_env/bin/python bootstrap.py
     ./bin/buildout -v
 
 
