@@ -1,4 +1,6 @@
-pysv.policy Copyright 2012, Veit Schiele
+pysv.policy 
+Copyright 2012, Veit Schiele
+Copyright 2013, Python Software Verband
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
