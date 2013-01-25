@@ -35,8 +35,8 @@ setup(name='pysv.policy',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'collective.quickupload',
-          'Products.PloneFormGen',
+          'collective.quickupload==1.5.3',
+          'Products.PloneFormGen==1.7.2',
       ],
       extras_require={'test': ['plone.app.testing']},
       entry_points="""
