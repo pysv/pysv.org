@@ -17,10 +17,6 @@ The buildout configuration of the Python Software Verband Plone 4 Website
 ### Run bootstrap
     $ python bootstrap.py
     $ ./bin/develop co pysv.policy
-    $ mkdir -p downloads/dist
-    $ cd downloads/dist
-    $ wget http://www.majid.info/python/threadframe/threadframe-0.2.tar.gz
-    $ cd ../..
     $ ./bin/buildout
 
 
