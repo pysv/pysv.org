@@ -5,9 +5,10 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="pysv.policy">
 
-  <five:registerPackage package="." initialize=".initialize" />
+  <includeDependencies package="."/>
 
   <include package="plone.app.registry" />
+
 
   <genericsetup:registerProfile
       name="default"

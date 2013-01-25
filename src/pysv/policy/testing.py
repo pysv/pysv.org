@@ -3,6 +3,7 @@ from plone.app.testing import PloneSandboxLayer
 from plone.app.testing import IntegrationTesting
 from plone.app.testing import FunctionalTesting
 from plone.app.testing import applyProfile
+from plone.testing import z2
 
 from zope.configuration import xmlconfig
 
@@ -16,6 +17,7 @@ class PysvPolicy(PloneSandboxLayer):
         xmlconfig.file('configure.zcml',
                        pysv.policy,
                        context=configurationContext)
+        z2.installProduct(app, 'pysv.policy')
 
 
     def setUpPloneSite(self, portal):
