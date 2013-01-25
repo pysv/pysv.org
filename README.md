@@ -4,7 +4,8 @@
 
 The buildout configuration of the Python Software Verband Plone 4 Website
 
-.. contents::
+    .. contents:: Overview
+    :depth: 2
 
 =================================
 Installation for Development
