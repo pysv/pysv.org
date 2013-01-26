@@ -4,7 +4,7 @@
     
   <utility 
   	provides="plone.app.users.userdataschema.IUserDataSchema"
-  	factory="pysv.policy.memberdata.userdataschema.UserDataSchemaProvider"
+  	factory="pysv.policy.userdataschema.UserDataSchemaProvider"
   />
 
   <adapter
