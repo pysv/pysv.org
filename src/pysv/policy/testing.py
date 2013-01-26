@@ -19,6 +19,9 @@ class PysvPolicy(PloneSandboxLayer):
                        context=configurationContext)
         z2.installProduct(app, 'pysv.policy')
 
+    def tearDownZope(self, app):
+        z2.uninstallProduct(app, 'Products.PloneFormGen')
+
 
     def setUpPloneSite(self, portal):
         applyProfile(portal, 'pysv.policy:default')

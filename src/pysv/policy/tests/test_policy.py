@@ -17,9 +17,6 @@ class TestPolicy(unittest.TestCase):
         self.ttool = getToolByName(self.portal, "portal_types")
     
     def test_policy_is_installed(self):
-        """ Validate that our products GS profile has been run and the product 
-            installed
-        """
         pid = 'pysv.policy'
         installed = [p['id'] for p in self.qi_tool.listInstalledProducts()]
         self.assertTrue(pid in installed,
@@ -36,4 +33,13 @@ class TestPolicy(unittest.TestCase):
     def test_FormFolder_exists (self):
         self.assertTrue ('FormFolder' in self.ttool.listContentTypes())
 
-
+   
+    def test_properties (self):
+        email_name = self.portal.getProperty('email_from_name')
+        self.assertEquals(email_name, 'Python Software Verband e.V.')
+        email_address = self.portal.getProperty('email_from_address')
+        self.assertEquals(email_address, 'email@python-verband.org')
+        title = self.portal.getProperty('title')
+        self.assertEquals(title, 'Python Software Verband')
+        
+        
