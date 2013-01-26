@@ -15,6 +15,7 @@ class TestPolicy(unittest.TestCase):
         self.portal = self.layer['portal']
         self.qi_tool = getToolByName(self.portal, 'portal_quickinstaller')
         self.ttool = getToolByName(self.portal, "portal_types")
+
     
     def test_policy_is_installed(self):
         pid = 'pysv.policy'
@@ -30,6 +31,7 @@ class TestPolicy(unittest.TestCase):
             pid in installed,
             'package appears not to have been installed')
 
+
     def test_FormFolder_exists (self):
         self.assertTrue ('FormFolder' in self.ttool.listContentTypes())
 
@@ -41,5 +43,13 @@ class TestPolicy(unittest.TestCase):
         self.assertEquals(email_address, 'email@python-verband.org')
         title = self.portal.getProperty('title')
         self.assertEquals(title, 'Python Software Verband')
+   
         
-        
+    def test_userdataschema_fields(self):
+        mdata = getToolByName(self.portal, 'portal_memberdata')
+        fullname = mdata.getProperty('fullname')
+        self.assertEquals(fullname, '')
+        not_existing = mdata.getProperty('non_existing_property')
+        self.assertEquals(not_existing, None)
+        isVisibleFor = mdata.getProperty('isVisibleFor')
+        self.assertEquals(isVisibleFor, '')
