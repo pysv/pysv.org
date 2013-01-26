@@ -15,7 +15,7 @@
     <property name="source">${user_email}</property>
     <property
        name="message">Der Artikel ${title} &lt;${absolute_url}&gt; wurde von ${user_fullname} &lt;${user_email}&gt; zur Veröffentlichung eingereicht.</property>
-    <property name="recipients">veit.schiele@python-verband.org</property>
+    <property name="recipients">info@python-verband.org</property>
     <property name="subject">[pysv] community</property>
    </action>
   </actions>
