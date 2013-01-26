@@ -26,6 +26,13 @@ class TestPolicy(unittest.TestCase):
                         'package appears not to have been installed')
 
 
+    def test_PloneFormGen_is_installed(self):
+        pid = 'PloneFormGen'
+        installed = [p['id'] for p in self.qi_tool.listInstalledProducts()]
+        self.assertTrue(
+            pid in installed,
+            'package appears not to have been installed')
+
     def test_FormFolder_exists (self):
         self.assertTrue ('FormFolder' in self.ttool.listContentTypes())
 
