@@ -1,8 +1,10 @@
+# -*- coding: utf-8 -*-
 from plone.app.users.userdataschema import IUserDataSchemaProvider
 from plone.app.users.userdataschema import IUserDataSchema
 from zope.interface import implements
 from zope import schema
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
+from pysv.policy import _
 
 class UserDataSchemaProvider(object):
     implements(IUserDataSchemaProvider)
