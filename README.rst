@@ -31,3 +31,20 @@ Tests
    ./bin/test --all
 
 
+Internationalization
+---------------------
+
+
+
+Update pysv.policy in Plone Instance
+-------------------------------------
+
+http://localhost:13090/Plone/manage/
+
+go to: portal_setup -> Import
+
+select pysv.policy
+
+Click on: Import all steps
+
+
