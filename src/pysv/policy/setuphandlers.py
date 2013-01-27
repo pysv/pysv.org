@@ -13,11 +13,10 @@ def importVarious(context):
     """Miscellanous steps import handle
     """
     # We check from our GenericSetup context whether we are running
-    # add-on installation for your product or any other proudct
-    # ToDo
-    #if context.readDataFile('pysv.policy_various.txt') is None:
-    #    # Not your add-on
-    #    return
+
+    if context.readDataFile('pysv.policy_various.txt') is None:
+        # Not your add-on
+        return
 
     portal = context.getSite()
     # Fetch the adapter
