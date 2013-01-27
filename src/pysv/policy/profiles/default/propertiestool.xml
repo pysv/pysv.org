@@ -5,7 +5,6 @@
   -->
   <property name="user_registration_fields" type="lines" purge="False">
    <element value="isVisibleFor" />
-   <element value="accept" />
   </property>
  </object>
 </object>
