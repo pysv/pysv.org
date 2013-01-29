@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="pysv.policy">
+
+  <includeDependencies package="."/>
+
+  <include package="plone.app.registry" />
+
+
+  <genericsetup:registerProfile
+      name="default"
+      title="pysv.policy"
+      directory="profiles/default"
+      description="Installs the pysv.policy package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  <!-- -*- extra stuff goes here -*- -->
+  <genericsetup:importStep
+       name="pysv.policy.various"
+       title="pysv.policy Policy: miscellaneous import steps"
+       description=" "
+       handler="pysv.policy.setuphandlers.importVarious">
+  </genericsetup:importStep>
+
+</configure>
