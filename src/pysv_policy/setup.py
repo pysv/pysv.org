@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0'
+version = '2.0'
 
 long_description = (
     open('README.rst').read()
@@ -37,7 +37,6 @@ setup(name='pysv.policy',
           'setuptools',
           'collective.quickupload',
           'Products.PloneFormGen',
-          'pysv.policy',
       ],
       extras_require={'test': ['plone.app.testing']},
       entry_points="""
