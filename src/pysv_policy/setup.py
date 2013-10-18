@@ -37,6 +37,7 @@ setup(name='pysv.policy',
           'setuptools',
           'collective.quickupload',
           'Products.PloneFormGen',
+          'plonede.content',
       ],
       extras_require={'test': ['plone.app.testing']},
       entry_points="""

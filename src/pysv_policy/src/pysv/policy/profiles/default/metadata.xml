@@ -3,5 +3,6 @@
     <version>1.0.1</version>
   <dependencies>
     <dependency>profile-Products.PloneFormGen:default</dependency>
+    <dependency>profile-plonede.content:default</dependency>
   </dependencies>
 </metadata>
