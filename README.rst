@@ -7,91 +7,63 @@ The buildout configuration of the Python Software Verband Plone 4 Website
 .. contents:: Overview
     :depth: 2
 
-=================================
+============================
 Installation for Development
-=================================
-
-Overview
-===========
+============================
 
 
-The current pysv_buildout tree
-----------------------------------
-
-pysv_buildout:
-
-    ├── README.md
-    ├── README.txt
-    ├── base.cfg
-    ├── bootstrap.py
-    ├── deploy.cfg
-    ├── devel.cfg
-    ├── src
-    │   └── README.txt
-    ├── var
-    │   └── README.txt
-    └── versions.cfg
-
-
-Prerequisites
-===================
+Abhängigkeiten
+==============
 
 - Python 2.7
-- virtualenv
-- libxslt-dev
+- virtualenv >1.9
+- diverse dev packages (python-dev, et al) und build-essential
 
 Checkout & Prepare Source
-=============================
+=========================
 
 Clone Repository locally
-----------------------------
+------------------------
 
-commands:
+commands::
 
     git clone git@github.com:pysv/pysv_buildout.git
     
-Create virtualenv
-----------------------
-
-commands:
-
-    cd pysv_buildout/
-    virtualenv virt_env
-    
-
-
 Make the devel.cfg the default buildout.cfg
-----------------------------------------------
+-------------------------------------------
 
-**Do this locally only!** Never check in this symbolic link into the repository!
-
-commands:
+commands::
 
     ln -s devel.cfg buildout.cfg
-    
+
+Dieser Symlink wird von git ignoriert. Das ist gut so.    
+
+Create virtualenv
+-----------------
+
+commands::
+
+    cd pysv_buildout/
+    virtualenv --no-site-packages --no-setuptools --clear .
     
 
 bootstrap your buildout
---------------------------
+-----------------------
 
-commands:
+commands::
 
-    ./virt_env/bin/python bootstrap.py
-    ./bin/buildout -v
+    ./bin/python2.7 bootstrap.py
+    ./bin/buildout
 
 
 Start Zope in debugmode
-------------------------------
+-----------------------
+
+::
 
     bin/instance fg
 
 Open Zope in the browser
------------------------------
+------------------------
 
-[http://localhost:13090/](http://localhost:13090/)
-
-Create Plone Site in Zope
---------------------------
-
-TBAL = To Be Added Later!
-
+`localhost:13090 <http://localhost:13090/>`_ 
