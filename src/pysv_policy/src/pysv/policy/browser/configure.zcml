@@ -22,4 +22,9 @@
       directory="javascript"
       />
 
+  <browser:resource
+        name="pysv.css"
+        file="pysv.css"
+        />
+
 </configure>

@@ -7,7 +7,7 @@
 
   <includeDependencies package="."/>
 
-  <einclude package=".browser" />
+  <include package=".browser" />
 
   <include package="plone.app.registry" />
 
