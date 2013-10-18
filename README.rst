@@ -1,13 +1,12 @@
-################################################
-#Readme of https://github.com/pysv/pysv_buildout
-################################################
+======================================================
+Buildout und Plone Policy der http://python-verband.de
+======================================================
 
 The buildout configuration of the Python Software Verband Plone 4 Website
 
 .. contents:: Overview
     :depth: 2
 
-============================
 Installation for Development
 ============================
 
