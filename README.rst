@@ -2,12 +2,12 @@
 Buildout und Plone Policy der http://python-verband.de
 ======================================================
 
-The buildout configuration of the Python Software Verband Plone 4 Website
+Die Buildout-Konfiguration von der Python Software Verband Plone 4 Website
 
 .. contents:: Overview
     :depth: 2
 
-Installation for Development
+Installation zum Development
 ============================
 
 
@@ -24,26 +24,27 @@ Checkout & Prepare Source
 Clone Repository locally
 ------------------------
 
-commands::
+Kommandos::
 
     git clone git@github.com:pysv/pysv_buildout.git
     
 Make the devel.cfg the default buildout.cfg
 -------------------------------------------
 
-commands::
+Kommandos::
 
+    cd pysv_buildout
     ln -s devel.cfg buildout.cfg
 
 Dieser Symlink wird von git ignoriert. Das ist gut so.    
 
-Create virtualenv
------------------
+Virtualenv erstellen
+--------------------
 
-commands::
+Kommandos::
 
-    cd pysv_buildout/
     virtualenv --no-site-packages --no-setuptools --clear .
+
     
 
 bootstrap your buildout
