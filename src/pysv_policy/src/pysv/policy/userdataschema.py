@@ -13,7 +13,7 @@ class UserDataSchemaProvider(object):
         """
         """
         return IEnhancedUserDataSchema
-    
+
 
 visibility_options = SimpleVocabulary([
     SimpleTerm(value='Niemanden', title=u'Niemanden'),
