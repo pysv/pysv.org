@@ -1,0 +1,57 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./interfaces.py:15
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Default: "Info"
+#: ./browser/teaser.pt:15
+msgid "Info"
+msgstr "Info"
+
+#: ./interfaces.py:16
+msgid "Short Description of the Body Text."
+msgstr "Kurze Beschreibung des Haupttextes."
+
+#. Default: "Teaser"
+#: ./profiles/default/types/Teaser.xml
+msgid "Teaser"
+msgstr "Teaser"
+
+#. Default: "Teaser Content Type"
+#: ./profiles/default/types/Teaser.xml
+msgid "Teaser Content Type"
+msgstr "Teaser Content Typ"
+
+#: ./content/teaser.py:44
+msgid "Teaser Image"
+msgstr "Teaser Bild"
+
+#: ./interfaces.py:12
+msgid "Title"
+msgstr "Titel"
+
+#. Default: "The link address is:"
+#: ./browser/teaser.pt:26
+msgid "link_address"
+msgstr "Die Adresse des Links lautet:"
+
+#. Default: "You see this page because you have permission to edit this link. Others will be immediately redirected to the link's target URL."
+#: ./browser/teaser.pt:16
+msgid "message_permissions_blocking_link_redirect"
+msgstr "Sie sehen diese Seite weil Sie das Recht haben den Link zu bearbeiten. Anonyme Bensucher werden direkt zum Linkziel weitergeleitet."
+

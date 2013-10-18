@@ -1,0 +1,101 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plonede.theme">
+
+<body>
+
+<div metal:fill-slot="main">
+    <tal:main-macro metal:define-macro="main"
+                    tal:define="kssClassesView context/@@kss_field_decorator_view;
+                                getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
+								">
+
+    <div class="scrollable">
+    
+    	<div class="items">
+    	
+    		<tal:loop tal:repeat="teaser view/teasers">
+    		<div class="teaser" tal:define="teaser_link python: teaser.getTeaserlink();
+											teaser_linkurl teaser_link/absolute_url|nothing;
+                                            teaser_linktext teaser/linktext;">
+    		
+    			<div class="teaserImage" 
+                     tal:define="scale teaser/@@images">
+    				<img tal:replace="structure python:scale.scale('image', width=695, height=200, direction='down').tag(css_class='teaserImageImage')" src="" alt="Teaser" />
+    			</div>
+
+				<div tal:attributes="class string:teaserText-${teaser/fontcolor}">
+    				<div class="teaserTitle">
+    					<span tal:replace="teaser/pretty_title_or_id" />
+    				</div>
+        			
+        			<div class="teaserDescription"
+        			              tal:define="teaser_desc_org teaser/Description;
+        			                          teaser_desc_cropped python:' '.join((teaser_desc_org[0:400].strip()).split(' ')[:-1]).strip('.')+'...';
+        			                          teaser_desc python: len(teaser_desc_org) > 400 and teaser_desc_cropped or teaser_desc_org;
+        			                          ">
+        				<span tal:replace="teaser_desc" />
+        			</div>
+    
+    				<div class="teaserLink" tal:condition="python: teaser_linkurl and teaser_linktext">
+    					<a href="" title="" tal:attributes="href teaser_linkurl; title teaser_linktext;" tal:content="teaser_linktext">
+    						Link
+    					</a>
+        			</div>
+				</div>
+
+    		</div>
+    		</tal:loop>
+    		
+    	</div>
+    	
+    </div>
+    
+    <div class="wrapper">
+    <div class="events">
+    
+    	<div class="headline">
+    		<a href="" i18n:translate="upcoming_events" tal:attributes="href python:'/events_listing'">Upcoming Events</a>
+    	</div>
+    	
+    	<tal:loop tal:repeat="event view/events">
+    	
+    		<div class="event" tal:define="event_url event/getURL|event/absolute_url;
+    		                               event_title event/pretty_title_or_id;
+    		                               event_desc event/Description;
+    		                               event_start event/start;
+    		                               ">
+    		                               
+    	
+    			<span class="date" tal:content="python:toLocalizedTime(event_start)">
+    				May 5
+                </span>
+                
+                |
+    			
+    			<a href="" title="" tal:attributes="href event_url; title event_desc" tal:content="event_title">
+    				Title of the event
+    			</a>
+    			
+    			|
+    			
+    			<span class="details" tal:content="event_desc">
+    				Description
+    			</span>
+    			
+    		</div>
+    		
+    	</tal:loop>
+    	
+    </div>
+    </div>
+    
+    </tal:main-macro>
+</div>
+
+</body>
+</html>

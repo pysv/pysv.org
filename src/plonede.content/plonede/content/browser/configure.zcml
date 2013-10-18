@@ -1,0 +1,29 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plonede.content">
+
+  <include package="plone.app.contentmenu" />
+
+  <browser:resource
+      name="teaser.gif"
+      image="teaser.gif"
+      />
+
+  <browser:page
+      for="..interfaces.ITeaser"
+      name="view"
+      class=".teaser.TeaserView"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      for="*"
+      name="frontpageview"
+      class=".frontpage.FrontpageView"
+      permission="zope2.View"
+      />
+
+
+</configure>

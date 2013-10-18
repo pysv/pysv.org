@@ -7,7 +7,10 @@
 
   <includeDependencies package="."/>
 
+  <include package=".browser" />
+
   <include package="plone.app.registry" />
+
 
 
   <genericsetup:registerProfile

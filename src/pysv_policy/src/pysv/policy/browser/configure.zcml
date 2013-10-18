@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plonede.theme">
+
+  <browser:page
+      for="Products.CMFCore.interfaces.ISiteRoot"
+      name="frontpage"
+      class=".frontpage.FrontpageView"
+      permission="zope2.View"
+      />
+
+  <browser:viewlet
+      name="plonede.banner"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+      class=".banner.BannerViewlet"
+      permission="zope2.View"
+      />
+
+  <browser:resourceDirectory
+      name="pysf.js"
+      directory="javascript"
+      />
+
+  <browser:resource
+        name="pysv.css"
+        file="pysv.css"
+        />
+
+</configure>

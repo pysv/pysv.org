@@ -1,0 +1,31 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="plonede.content">
+
+  <i18n:registerTranslations directory="locales" />
+  
+  <five:registerPackage package="." initialize=".initialize" />
+  
+  <include package=".browser" />
+  <include package=".content" />
+  
+  <genericsetup:registerProfile
+    name="default"
+    title="Plone.de Content"
+    directory="profiles/default"
+    description="Extension profile for the Plone.de Content Package"
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    />  
+
+  <genericsetup:importStep
+      name="plonede.content.various"
+      title="Plone.de Content Package: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="plonede.content.setuphandlers.setupVarious">
+    <depends name="skins"/>
+  </genericsetup:importStep>
+
+</configure>

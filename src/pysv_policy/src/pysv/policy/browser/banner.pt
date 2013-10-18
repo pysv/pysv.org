@@ -1,0 +1,51 @@
+<div id="ablteaser"
+     class="" 
+     tal:define="teasers view/random_banner | nothing;
+                 portal context/@@plone_portal_state/portal;
+                 context_state context/@@plone_context_state"
+     tal:condition="teasers"
+     tal:attributes="class python: view.scroll and 'scrollable' or '';"
+     i18n:domain="plonede.theme">
+
+    <div class="items">
+    
+        <tal:loop tal:repeat="teaser teasers">
+    
+        <div class="teaser" tal:define="teaser python:teaser.getObject();
+                                        teaser_link python: teaser.getTeaserlink();
+                                        teaser_linkurl teaser_link/absolute_url|nothing;
+                                        teaser_linktext teaser/linktext;">
+        
+            <div class="teaserImage" 
+                 tal:define="scale teaser/@@images">
+                <img tal:replace="structure python:scale.scale('image', width=695, height=200, direction='down').tag(css_class='teaserImageImage')" src="" alt="Teaser" />
+            </div>
+    
+            <div tal:attributes="class string:teaserText-${teaser/fontcolor}">
+                <div class="teaserTitle">
+                    <span tal:replace="teaser/pretty_title_or_id" />
+                </div>
+                
+                <div class="teaserDescription"
+                              tal:define="teaser_desc_org teaser/Description;
+                                          teaser_desc_cropped python:' '.join((teaser_desc_org[0:400].strip()).split(' ')[:-1]).strip('.')+'...';
+                                          teaser_desc python: len(teaser_desc_org) > 400 and teaser_desc_cropped or teaser_desc_org;
+                                          ">
+                    <span tal:replace="teaser_desc" />
+                </div>
+    
+                <div class="teaserLink" tal:condition="python: teaser_linkurl and teaser_linktext">
+                    <a href="" title="" tal:attributes="href teaser_linkurl; title teaser_linktext;" tal:content="teaser_linktext">
+                        Link
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    
+        </tal:loop>
+        
+    </div>
+
+</div>
+
