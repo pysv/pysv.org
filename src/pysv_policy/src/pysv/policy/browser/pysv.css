@@ -38,7 +38,7 @@ margin-bottom: 1em;
 
 
 
-/* Navigation */
+/* Navigation, Portlets, Footer */
 #portal-globalnav {
     background: none repeat scroll 0 0 #3877b4;
     font-size: 100%;
@@ -75,7 +75,10 @@ dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:hover {
    color: white;
 }
 
-
+#portal-footer {
+    text-align: center;
+    background: none repeat scroll 0 0 white;
+}
 
 /* Banner */
 #portal-banner {
