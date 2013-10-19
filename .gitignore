@@ -10,6 +10,7 @@
 *.egg
 *.egg-info
 dist
+devsrc
 build
 eggs
 parts
