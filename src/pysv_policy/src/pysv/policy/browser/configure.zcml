@@ -2,7 +2,13 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="plonede.theme">
+    
+  <includeDependencies package="." />    
+    
+  <include package="z3c.jbot" file="meta.zcml" />
 
+  <browser:templateOverrides directory="jbot" />    
+  
   <browser:page
       for="Products.CMFCore.interfaces.ISiteRoot"
       name="frontpage"
@@ -20,6 +26,11 @@
   <browser:resourceDirectory
       name="pysf.js"
       directory="javascript"
+      />
+      
+  <browser:resourceDirectory
+      name="pysv.images"
+      directory="images"
       />
 
   <browser:resource

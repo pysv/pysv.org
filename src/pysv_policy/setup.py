@@ -38,6 +38,7 @@ setup(name='pysv.policy',
           'collective.quickupload',
           'Products.PloneFormGen',
           'plonede.content',
+          'z3c.jbot',
       ],
       extras_require={'test': ['plone.app.testing']},
       entry_points="""

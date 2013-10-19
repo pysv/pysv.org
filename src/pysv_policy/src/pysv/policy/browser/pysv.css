@@ -1,3 +1,44 @@
+/* Anpassung von Überschrift Größe um RST besser abzubilden *
+* , nicht final # acsr 20121109_17-39-49*/
+
+h4 {
+    font-size: 1em;
+}
+h5 {
+    font-size: 0.9em;
+}
+
+/* uncomment the below selector to get a fixed-width layout. *
+ * 60em is equivalent to 960px in this case, and every       *
+ * grid cell will be 40px with 10px padding.                 */
+
+#visual-portal-wrapper { width: 60em; margin: 0 auto; } 
+
+/* Anpassung von Abständen die in Chrome zu knapp ausfallen, *
+*  nicht final # acsr 20121216_19-54-42*/
+
+#content ul,
+#content ol,
+#content dl {
+   margin-bottom: 1em;
+}
+
+#content .documentDescription, #content #description {
+    margin-bottom: 1em;
+    line-height: 1.4em;
+}
+
+#plone-document-byline.documentByLine {
+    margin-bottom: 1em;
+}
+
+body.template-folder_full_view div.description {
+margin-bottom: 1em;
+}
+
+
+
+
 
 #portal-banner {
 	width: 695px;
