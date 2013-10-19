@@ -38,8 +38,46 @@ margin-bottom: 1em;
 
 
 
+/* Navigation */
+#portal-globalnav {
+    background: none repeat scroll 0 0 #3877b4;
+    font-size: 100%;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    padding-left: 0.5em;
+}
+#portal-globalnav li {
+    text-align: center;
+}
+#portal-globalnav li:first-child {
+    margin-right: 0.5em;
+}
+#portal-globalnav li a {
+    background: none repeat scroll 0 0 #3877b4;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 0.8em 0.5em 0.8em;
+}
+#portal-globalnav .selected a, 
+#portal-globalnav .selected a:hover, 
+#portal-globalnav a:hover {
+    background: none repeat scroll 0 0 #3877b4;
+    color: #FFE873;
+}
+dl.portlet dt {
+    background: none repeat scroll 0 0 #3877b4;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5em;
+}
+dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:hover {
+   color: white;
+}
 
 
+
+/* Banner */
 #portal-banner {
 	width: 695px;
 	height: 200px;
