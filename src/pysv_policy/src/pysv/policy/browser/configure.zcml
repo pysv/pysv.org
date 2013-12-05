@@ -13,6 +13,7 @@
       for="Products.CMFCore.interfaces.ISiteRoot"
       name="frontpage"
       class=".frontpage.FrontpageView"
+      template="frontpage.pt"
       permission="zope2.View"
       />
 

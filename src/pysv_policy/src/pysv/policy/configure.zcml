@@ -11,16 +11,14 @@
 
   <include package="plone.app.registry" />
 
-
-
   <genericsetup:registerProfile
       name="default"
       title="pysv.policy"
       directory="profiles/default"
       description="Installs the pysv.policy package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
-  <!-- -*- extra stuff goes here -*- -->
+  />
+      
   <genericsetup:importStep
        name="pysv.policy.various"
        title="pysv.policy Policy: miscellaneous import steps"
