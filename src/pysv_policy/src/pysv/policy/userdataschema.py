@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
-from plone.app.users.userdataschema import IUserDataSchemaProvider
 from plone.app.users.userdataschema import IUserDataSchema
+from plone.app.users.userdataschema import IUserDataSchemaProvider
+from pysv.policy import _
 from zope.interface import implements
 from zope import schema
-from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
-from pysv.policy import _
+from zope.schema.vocabulary import SimpleTerm
+from zope.schema.vocabulary import SimpleVocabulary
+
 
 class UserDataSchemaProvider(object):
     implements(IUserDataSchemaProvider)
@@ -21,6 +23,7 @@ visibility_options = SimpleVocabulary([
     SimpleTerm(value='Jeden', title=u'Jeden'),
     ])
 
+
 class IEnhancedUserDataSchema(IUserDataSchema):
     """ Use all the fields from the default user data schema and add
     some further
@@ -28,6 +31,6 @@ class IEnhancedUserDataSchema(IUserDataSchema):
     isVisibleFor = schema.Choice(
         title=_(u'label_isVisible', default=u'Daten sichtbar für'),
         description=_(u'help_visibility', default=u""),
-        vocabulary = visibility_options,
+        vocabulary=visibility_options,
         required=True,
     )
