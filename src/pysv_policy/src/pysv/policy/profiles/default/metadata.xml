@@ -4,5 +4,6 @@
   <dependencies>
     <dependency>profile-Products.PloneFormGen:default</dependency>
     <dependency>profile-plonede.content:default</dependency>
+    <dependency>profile-Solgema.fullcalendar:default</dependency>
   </dependencies>
 </metadata>
