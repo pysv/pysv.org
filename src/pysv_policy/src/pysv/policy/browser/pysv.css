@@ -12,10 +12,7 @@ h5 {
  * 60em is equivalent to 960px in this case, and every       *
  * grid cell will be 40px with 10px padding.                 */
 
-#visual-portal-wrapper { width: 60em; margin: 0 auto; } 
-
-/* Anpassung von Abständen die in Chrome zu knapp ausfallen, *
-*  nicht final # acsr 20121216_19-54-42*/
+#visual-portal-wrapper { max-width: 60em; margin: 0 auto; } 
 
 #content ul,
 #content ol,
@@ -38,32 +35,54 @@ margin-bottom: 1em;
 
 
 
-/* Navigation */
+/* Navigation, Portlets, Footer */
+/* needs some cleanup from a css guru */
+
+ul li #toggleNav,
+#dropnav {
+    background: none repeat scroll 0 0 #3877b4 !important;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;    
+}
+
+#dropnav,
 #portal-globalnav {
     background: none repeat scroll 0 0 #3877b4;
-    font-size: 100%;
+    font-size: 100% !important;
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
     padding-left: 0.5em;
 }
+#dropnav li,
 #portal-globalnav li {
     text-align: center;
 }
 #portal-globalnav li:first-child {
-    margin-right: 0.5em;
+    border-bottom: 0.5em;
 }
+#dropnav li:last-child {
+    
+}
+#dropnav li a,
 #portal-globalnav li a {
-    background: none repeat scroll 0 0 #3877b4;
-    color: white;
-    font-weight: bold;
+    background: none repeat scroll 0 0 #3877b4 !important;
+    color: white !important;
+    font-weight: bold !important;
     padding: 0.5em 0.8em 0.5em 0.8em;
 }
+#dropnav li a {
+    padding: 1em 0 !important;
+}
+#dropnav .selected a,
+#dropnav .selected a:hover,
+#dropnav a:hover,
 #portal-globalnav .selected a, 
 #portal-globalnav .selected a:hover, 
 #portal-globalnav a:hover {
-    background: none repeat scroll 0 0 #3877b4;
-    color: #FFE873;
+    background: none repeat scroll 0 0 #3877b4 !important;
+    color: #FFE873 !important;
 }
 dl.portlet dt {
     background: none repeat scroll 0 0 #3877b4;
@@ -75,7 +94,10 @@ dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:hover {
    color: white;
 }
 
-
+#portal-footer {
+    text-align: center;
+    background: none repeat scroll 0 0 white;
+}
 
 /* Banner */
 #portal-banner {
