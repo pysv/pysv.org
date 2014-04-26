@@ -1,4 +1,21 @@
+$body-background: url(%THEME_URL%/images/bg.png) repeat-x 0 0 #ebe8e1;
+
 #page-wrapper {
+    background-color: white;
     border: none;
     box-shadow: none;
+}
+#portal-logo {
+    height: 84px;
+}
+#portal-topactions {
+    display: none;
+}
+#container {
+    padding-top: 1px;
+}
+@media screen and (max-width: 320px) {
+    #portal-logo {
+        height: 42px;
+    }
 }
