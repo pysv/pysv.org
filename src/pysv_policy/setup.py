@@ -37,7 +37,7 @@ setup(
         'setuptools',
         'Pillow',
         'Plone',
-        'plone.app.contenttypes[atrefs]'
+        'plone.app.contenttypes [atrefs]',
         'plonetheme.onegov',
         'z3c.jbot',
         'Solgema.fullcalendar',
