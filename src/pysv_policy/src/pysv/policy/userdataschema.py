@@ -19,7 +19,7 @@ class UserDataSchemaProvider(object):
 
 visibility_options = SimpleVocabulary([
     SimpleTerm(value='Niemanden', title=u'Niemanden'),
-    SimpleTerm(value='Vereinsmitglieder', title=u'Verseinsmitglieder'),
+    SimpleTerm(value='Vereinsmitglieder', title=u'Vereinsmitglieder'),
     SimpleTerm(value='Jeden', title=u'Jeden'),
     ])
 
