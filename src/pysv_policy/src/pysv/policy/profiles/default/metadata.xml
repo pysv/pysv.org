@@ -3,7 +3,7 @@
     <version>1.0.1</version>
   <dependencies>
     <dependency>profile-Products.PloneFormGen:default</dependency>
-    <dependency>profile-plonede.content:default</dependency>
     <dependency>profile-Solgema.fullcalendar:default</dependency>
+    <dependency>profile-plonetheme.onegov:default</dependency>
   </dependencies>
 </metadata>

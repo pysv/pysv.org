@@ -42,6 +42,7 @@ setup(
         'Solgema.fullcalendar',
         'collective.quickupload',
         'Products.PloneFormGen',
+        'plonetheme.onegov',
     ],
     extras_require={'test': ['plone.app.testing']},
     entry_points="""
