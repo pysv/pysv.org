@@ -25,6 +25,13 @@
     border: 1px solid #757575;
     border-radius: 3px;
 }
+a[target="_blank"]:before,
+span.link-external a:before,
+.external-link:before {
+    content: none;
+}
+
+
 @media screen and (max-width: 320px) {
     #portal-logo {
         height: 42px;
