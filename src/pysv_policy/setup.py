@@ -39,6 +39,7 @@ setup(
         'Plone',
         'plone.app.contenttypes [atrefs]',
         'plonetheme.onegov',
+        'collective.behavior.banner',
         'z3c.jbot',
         'Solgema.fullcalendar',
         'collective.quickupload',

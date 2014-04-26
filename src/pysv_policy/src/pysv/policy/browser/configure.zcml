@@ -15,4 +15,13 @@
   <theme:add_scss
         path="pysv.scss" />
 
+    <browser:viewlet
+      name="collective.bannerviewlet"
+      for="plone.dexterity.interfaces.IDexterityContent"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+      class="collective.behavior.banner.browser.viewlets.BannerViewlet"
+      permission="zope2.View"
+      />
+
+
 </configure>
