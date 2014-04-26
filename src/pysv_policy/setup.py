@@ -21,8 +21,8 @@ setup(
     # Get more strings from
     # http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
-      "Programming Language :: Python",
-      ],
+        "Programming Language :: Python",
+    ],
     keywords='',
     author='Python Software Verband',
     author_email='info@python-verband.org',
@@ -37,12 +37,12 @@ setup(
         'setuptools',
         'Pillow',
         'Plone',
+        'plone.app.contenttypes[atrefs]'
+        'plonetheme.onegov',
         'z3c.jbot',
-        'plonede.content',
         'Solgema.fullcalendar',
         'collective.quickupload',
         'Products.PloneFormGen',
-        'plonetheme.onegov',
     ],
     extras_require={'test': ['plone.app.testing']},
     entry_points="""
