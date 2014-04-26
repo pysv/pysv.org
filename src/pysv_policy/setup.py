@@ -43,6 +43,7 @@ setup(
         'Solgema.fullcalendar',
         'collective.quickupload',
         'Products.PloneFormGen',
+        'ftw.footer',
     ],
     extras_require={'test': ['plone.app.testing']},
     entry_points="""
