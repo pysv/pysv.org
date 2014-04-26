@@ -19,25 +19,25 @@ pysv_policy
 The policy package to rule the configuration of the Python Software Verband Plone 4 Website
 
 Buildout
----------
+--------
 :
     python bootstrap.py
     ./bin/buildout
 
 Tests
----------
+-----
 :
 
    ./bin/test --all
 
 
 Internationalization
----------------------
+--------------------
 
 
 
 Update pysv.policy in Plone Instance
--------------------------------------
+------------------------------------
 
 http://localhost:13090/Plone/manage/
 
