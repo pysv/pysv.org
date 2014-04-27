@@ -6,5 +6,6 @@
     <dependency>profile-Solgema.fullcalendar:default</dependency>
     <dependency>profile-plonetheme.onegov:default</dependency>
     <dependency>profile-ftw.footer:default</dependency>
+    <dependency>profile-Products.PloneKeywordManager:default</dependency>
   </dependencies>
 </metadata>

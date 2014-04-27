@@ -45,6 +45,7 @@ setup(
         'collective.quickupload',
         'Products.PloneFormGen',
         'ftw.footer',
+        'Products.PloneKeywordManager[Levenshtein]',
     ],
     extras_require={'test': ['plone.app.testing']},
     entry_points="""
