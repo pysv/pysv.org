@@ -46,6 +46,7 @@ setup(
         'Products.PloneFormGen',
         'ftw.footer',
         'Products.PloneKeywordManager[Levenshtein]',
+        'eea.facetednavigation',
     ],
     extras_require={'test': ['plone.app.testing']},
     entry_points="""
