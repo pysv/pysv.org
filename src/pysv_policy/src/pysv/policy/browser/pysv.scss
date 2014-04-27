@@ -32,6 +32,11 @@ span.link-external a:before,
 }
 
 
+#column-navigation dl.portlet {
+    background-color: #F4F4F1;
+    margin-bottom: 1em;
+    padding: 1em;
+}
 @media screen and (max-width: 320px) {
     #portal-logo {
         height: 42px;
