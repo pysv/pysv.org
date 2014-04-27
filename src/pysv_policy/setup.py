@@ -43,6 +43,7 @@ setup(
         'z3c.jbot',
         'Solgema.fullcalendar',
         'collective.quickupload',
+        'collective.z3cform.widgets',
         'Products.PloneFormGen',
         'ftw.footer',
         'Products.PloneKeywordManager[Levenshtein]',
