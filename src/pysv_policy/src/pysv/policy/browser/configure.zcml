@@ -23,4 +23,6 @@
       permission="zope2.View"
       />
 
+    <adapter factory=".subjects.SubjectsFieldWidget" />
+
 </configure>
