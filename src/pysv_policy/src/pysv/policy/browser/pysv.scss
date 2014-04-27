@@ -31,8 +31,10 @@ span.link-external a:before,
     content: none;
 }
 
-
-#column-navigation dl.portlet {
+dl.portletEvents dd.portletItem {
+    padding-bottom: 1em;
+}
+#column-navigation div.portletWrapper {
     background-color: #F4F4F1;
     margin-bottom: 1em;
     padding: 1em;
