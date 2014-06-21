@@ -7,5 +7,6 @@
     <dependency>profile-plonetheme.onegov:default</dependency>
     <dependency>profile-ftw.footer:default</dependency>
     <dependency>profile-Products.PloneKeywordManager:default</dependency>
+    <dependency>profile-collective.formscaptcha:default</dependency>
   </dependencies>
 </metadata>
