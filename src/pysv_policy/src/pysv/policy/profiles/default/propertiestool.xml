@@ -4,7 +4,7 @@
   <!-- Fields that will be added to the form after installation of the product
   -->
   <property name="user_registration_fields" type="lines" purge="False">
-   <element value="isVisibleFor" />
+   <element value="isVisibleFor" purge="True"/>
   </property>
  </object>
 </object>

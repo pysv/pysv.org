@@ -44,6 +44,7 @@ setup(
         'Solgema.fullcalendar',
         'collective.quickupload',
         'collective.z3cform.widgets',
+        'collective.formscaptcha',
         'Products.PloneFormGen',
         'ftw.footer',
         'Products.PloneKeywordManager[Levenshtein]',
