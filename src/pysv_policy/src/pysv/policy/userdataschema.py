@@ -30,7 +30,9 @@ class IEnhancedUserDataSchema(IUserDataSchema):
     """
     isVisibleFor = schema.Choice(
         title=_(u'label_isVisible', default=u'Daten sichtbar für'),
-        description=_(u'help_visibility', default=u""),
+        description=_(
+            u'help_visibility',
+            default=u"diese Funktion ist noch inaktiv"),
         vocabulary=visibility_options,
-        required=True,
+        required=False,
     )

@@ -2,9 +2,9 @@
     xmlns="http://namespaces.zope.org/zope"
     i18n_domain="pysv.policy">
 
-<!--
 
-DISABLED FOR NOW UNTIL NEEDED
+
+
 
   <utility
   	provides="plone.app.users.userdataschema.IUserDataSchema"
@@ -16,5 +16,5 @@ DISABLED FOR NOW UNTIL NEEDED
     for="Products.CMFCore.interfaces.ISiteRoot"
     factory=".adapter.EnhancedUserDataPanelAdapter"
     />
--->
+
 </configure>
