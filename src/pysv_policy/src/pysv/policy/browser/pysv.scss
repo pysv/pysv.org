@@ -65,3 +65,13 @@ div.tileImage {
         }
     }
 }
+
+/* ftw.slider fixes */
+#slider-wrapper {
+    max-width: 1164px;
+    #slider-panes {
+        div.sliderPane {
+            max-width: 1164px;
+        }
+    }
+}
