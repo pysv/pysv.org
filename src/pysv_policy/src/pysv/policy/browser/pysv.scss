@@ -93,5 +93,14 @@ body.portaltype-contentpage {
         .documentByLine {
             display: none;
         }
-    }
+        div.sliderText {
+            background: none;
+            background-image: none;
+            background-color: none;
+            h1,
+            span {
+                background-color: #eaac04;
+                padding: 3px;
+            }
+        }
 }
