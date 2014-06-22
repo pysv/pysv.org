@@ -39,6 +39,7 @@ setup(
         'collective.quickupload',
         'collective.z3cform.widgets',
         'eea.facetednavigation',
+        'ftw.contentpage',
         'ftw.footer',
         'Pillow',
         'Plone',
