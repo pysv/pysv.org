@@ -37,6 +37,7 @@ setup(
         'setuptools',
         'Pillow',
         'Plone',
+        'plone.api',
         'plone.app.contenttypes [atrefs]',
         'plonetheme.onegov',
         'collective.behavior.banner',

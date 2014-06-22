@@ -5,25 +5,30 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="pysv.policy">
 
-  <includeDependencies package="."/>
+    <includeDependencies package="."/>
 
-  <include package=".browser" />
+    <include package=".browser" />
+    <include package="plone.app.registry" />
 
-  <include package="plone.app.registry" />
+    <genericsetup:registerProfile
+        name="default"
+        title="pysv.policy"
+        directory="profiles/default"
+        description="Installs the pysv.policy package"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
 
-  <genericsetup:registerProfile
-      name="default"
-      title="pysv.policy"
-      directory="profiles/default"
-      description="Installs the pysv.policy package"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-  />
-      
-  <genericsetup:importStep
-       name="pysv.policy.various"
-       title="pysv.policy Policy: miscellaneous import steps"
-       description=" "
-       handler="pysv.policy.setuphandlers.importVarious">
-  </genericsetup:importStep>
+    <genericsetup:importStep
+        name="pysv.policy.various"
+        title="pysv.policy Policy: miscellaneous import steps"
+        description=" "
+        handler="pysv.policy.setuphandlers.importVarious"
+    />
+
+    <!-- subscribers -->
+    <subscriber
+        for="Products.PlonePAS.events.UserInitialLoggedinEvent"
+        handler=".subscribers.redirect_to_first_login_landing_page"
+    />
 
 </configure>
