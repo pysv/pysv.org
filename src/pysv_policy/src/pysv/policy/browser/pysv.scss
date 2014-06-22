@@ -86,22 +86,3 @@ div.tileImage {
         padding-left: 5px;
     }
 }
-
-body.portaltype-contentpage {
-    #content {
-        .documentFirstHeading,
-        .documentByLine {
-            display: none;
-        }
-        div.sliderText {
-            background: none;
-            background-image: none;
-            background-color: none;
-            h1,
-            p,
-            span {
-                background-color: #eaac04;
-                padding: 3px;
-            }
-        }
-}
