@@ -6,7 +6,9 @@
 #portal-logo {
     height: 84px;
 }
-#portal-topactions,
+#portal-topactions a {
+    color: white;
+}
 #bottom-actions {
     display: none;
 }
@@ -48,5 +50,18 @@ div.tileImage {
 @media screen and (max-width: 320px) {
     #portal-logo {
         height: 42px;
+    }
+}
+
+/* calender font color */
+#content {
+    #calendar  {
+        .fc-content {
+            a:link,
+            a:hover,
+            a:visited {
+                color:#FFFFFF !important;
+            }
+        }
     }
 }
