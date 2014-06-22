@@ -27,8 +27,8 @@
 
     <!-- subscribers -->
     <subscriber
-        for="Products.PlonePAS.events.UserInitialLoggedinEvent"
-        handler=".subscribers.redirect_to_first_login_landing_page"
+        for="Products.PlonePAS.events.IUserInitialLoginInEvent"
+        handler=".subscriber.redirect_to_first_login_landing_page"
     />
 
 </configure>
