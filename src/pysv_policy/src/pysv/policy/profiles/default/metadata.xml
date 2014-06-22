@@ -8,5 +8,6 @@
     <dependency>profile-ftw.footer:default</dependency>
     <dependency>profile-Products.PloneKeywordManager:default</dependency>
     <dependency>profile-collective.formscaptcha:default</dependency>
+    <dependency>profile-Products.RedirectionTool:default</dependency>
   </dependencies>
 </metadata>
