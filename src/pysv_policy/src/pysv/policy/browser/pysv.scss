@@ -66,7 +66,7 @@ div.tileImage {
     }
 }
 
-/* ftw.slider fixes */
+/* ftw.slider fleft*/
 #slider-wrapper {
     max-width: 1164px;
     #slider-panes {
@@ -75,3 +75,15 @@ div.tileImage {
         }
     }
 }
+
+
+/* simplelayout fixes */
+.simplelayout-content {
+    .onecolumn.left    {
+        padding-right: 5px;
+    }
+    .onecolumn.right {
+        padding-left: 5px;
+    }
+}
+
