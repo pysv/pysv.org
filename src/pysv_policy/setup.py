@@ -50,6 +50,7 @@ setup(
         'Products.RedirectionTool',
         'setuptools',
         'Solgema.fullcalendar',
+        'wildcard.foldercontents',
         'z3c.jbot',
     ],
     extras_require={'test': ['plone.app.testing']},
