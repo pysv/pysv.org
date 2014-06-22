@@ -87,3 +87,11 @@ div.tileImage {
     }
 }
 
+body.portaltype-contentpage {
+    #content {
+        .documentFirstHeading,
+        .documentByLine {
+            display: none;
+        }
+    }
+}
