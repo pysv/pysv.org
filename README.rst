@@ -38,22 +38,13 @@ Kommandos::
 
 Dieser Symlink wird von git ignoriert. Das ist gut so.    
 
-Virtualenv erstellen
---------------------
 
-Kommandos::
-
-    virtualenv --no-site-packages --no-setuptools --clear .
-
-    
-
-bootstrap your buildout
------------------------
+bootstrap your environment
+--------------------------
 
 commands::
 
-    ./bin/python2.7 bootstrap.py
-    ./bin/buildout
+    ./bootstrap.sh
 
 
 Start Zope in debugmode

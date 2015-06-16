@@ -8,9 +8,9 @@ long_description = (
     'Contributors\n'
     '============\n'
     + '\n' +
-    open('CONTRIBUTORS.txt').read()
+    open('CONTRIBUTORS.rst').read()
     + '\n' +
-    open('CHANGES.txt').read()
+    open('CHANGES.rst').read()
     + '\n')
 
 setup(
@@ -37,7 +37,7 @@ setup(
         'collective.behavior.banner',
         'collective.formscaptcha',
         'collective.quickupload',
-        'collective.z3cform.widgets',
+        # 'collective.z3cform.widgets',
         'eea.facetednavigation',
         'ftw.contentpage',
         'ftw.footer',

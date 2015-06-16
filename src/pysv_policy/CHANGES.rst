@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.1
+---
+
+- Upgrade to Plone 4.3.6 et al. [jensens]
+
 2.0
 ---
 

@@ -8,7 +8,7 @@ The buildout configuration of the Python Software Verband Plone 4 Website
     :depth: 2
 
 =======================================================================
-policy package to rule the configuration of the Python Software Verband 
+policy package to rule the configuration of the Python Software Verband
 =======================================================================
 
 
@@ -20,9 +20,10 @@ The policy package to rule the configuration of the Python Software Verband Plon
 
 Buildout
 --------
-:
-    python bootstrap.py
-    ./bin/buildout
+
+::
+    ln -s develop.cfg buildout.cfg
+    ./bin/bootstrap.sh
 
 Tests
 -----
