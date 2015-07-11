@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '2.0'
+version = '2.1'
 
 long_description = (
     open('README.rst').read()
@@ -37,22 +37,24 @@ setup(
         'collective.behavior.banner',
         'collective.formscaptcha',
         'collective.quickupload',
-        # 'collective.z3cform.widgets',
+        'collective.z3cform.widgets',
         'eea.facetednavigation',
-        'ftw.contentpage',
         'ftw.footer',
         'Pillow',
         'Plone',
         'plone.api',
         'plone.app.contenttypes [atrefs]',
+        'plone.app.event[plone43]',
         'plonetheme.onegov',
         'Products.PloneFormGen',
         'Products.PloneKeywordManager[Levenshtein]',
         'Products.RedirectionTool',
         'setuptools',
         'Solgema.fullcalendar',
-        'wildcard.foldercontents >=2.0b3',
         'z3c.jbot',
+
+        # legacy, unused, layers left, needs uninstall love
+        'ftw.contentpage',
     ],
     extras_require={'test': ['plone.app.testing']},
     entry_points="""

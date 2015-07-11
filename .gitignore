@@ -51,3 +51,7 @@ virt_env/
 
 # is based on base.cfg initialisation
 src/pysv.policy/
+
+# archive
+*.tgz
+*.zip
