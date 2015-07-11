@@ -1,3 +1,6 @@
+.. image:: https://badge.waffle.io/pysv/pysv.org.png?label=ready&title=Ready 
+ :target: https://waffle.io/pysv/pysv.org
+ :alt: 'Stories in Ready'
 ======================================================
 Buildout und Plone Policy der http://python-verband.de
 ======================================================
