@@ -44,6 +44,7 @@ setup(
         'plone.api',
         'plone.app.contenttypes[atrefs]',
         'plone.app.event[plone43]',
+        'plone.formwidget.recaptcha',
         'plonetheme.onegov',
         'Products.PloneFormGen',
         'Products.PloneKeywordManager[Levenshtein]',
