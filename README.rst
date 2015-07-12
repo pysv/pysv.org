@@ -1,4 +1,4 @@
-.. image:: https://badge.waffle.io/pysv/pysv.org.png?label=ready&title=Ready 
+.. image:: https://badge.waffle.io/pysv/pysv.org.png?label=ready&title=Ready
  :target: https://waffle.io/pysv/pysv.org
  :alt: 'Stories in Ready'
 ======================================================
@@ -34,7 +34,7 @@ Clone Repository locally
 Kommandos::
 
     git clone git@github.com:pysv/pysv_buildout.git
-    
+
 Make the devel.cfg the default buildout.cfg
 -------------------------------------------
 
@@ -43,7 +43,7 @@ Kommandos::
     cd pysv_buildout
     ln -s devel.cfg buildout.cfg
 
-Dieser Symlink wird von git ignoriert. Das ist gut so.    
+Dieser Symlink wird von git ignoriert. Das ist gut so.
 
 
 bootstrap your environment
@@ -54,8 +54,8 @@ commands::
     ./bootstrap.sh
 
 
-Start Zope in debugmode
------------------------
+Start Zope in foreground
+------------------------
 
 ::
 
@@ -64,4 +64,4 @@ Start Zope in debugmode
 Open Zope in the browser
 ------------------------
 
-`localhost:13090 <http://localhost:13090/>`_ 
+`localhost:8080 <http://localhost:8080/>`_
