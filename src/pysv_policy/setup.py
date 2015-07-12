@@ -42,7 +42,7 @@ setup(
         'Pillow',
         'Plone',
         'plone.api',
-        'plone.app.contenttypes [atrefs]',
+        'plone.app.contenttypes[atrefs]',
         'plone.app.event[plone43]',
         'plonetheme.onegov',
         'Products.PloneFormGen',
@@ -54,8 +54,8 @@ setup(
 
         # legacy, unused, layers left, needs uninstall love
         #'ftw.contentpage',
-	#'ftw.geo',
-	'collective.geo.mapwidget',
+	    #'ftw.geo',
+	    'collective.geo.mapwidget',
     ],
     extras_require={'test': ['plone.app.testing']},
     entry_points="""
