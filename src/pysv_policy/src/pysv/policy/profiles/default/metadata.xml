@@ -2,11 +2,14 @@
 <metadata>
     <version>1.0.2</version>
   <dependencies>
-    <dependency>profile-Products.PloneFormGen:default</dependency>
+    <dependency>profile-plone.app.contenttypes:default</dependency>
+    <dependency>profile-plone.app.event.bbb:default</dependency>
     <dependency>profile-plonetheme.onegov:default</dependency>
     <dependency>profile-ftw.footer:default</dependency>
+    <dependency>profile-Products.PloneFormGen:default</dependency>
     <dependency>profile-Products.PloneKeywordManager:default</dependency>
     <dependency>profile-collective.formscaptcha:default</dependency>
     <dependency>profile-Products.RedirectionTool:default</dependency>
+
   </dependencies>
 </metadata>
