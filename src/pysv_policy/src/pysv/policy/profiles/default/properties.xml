@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <site>
- <property name="title">Python Software Verband</property>
+ <property name="title">Python Software Verband e.V.</property>
  <property name="email_from_address"
     type="string">email@python-verband.org</property>
  <property name="email_from_name"
