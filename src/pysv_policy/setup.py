@@ -54,7 +54,9 @@ setup(
         'z3c.jbot',
 
         # legacy, unused, layers left, needs uninstall love
-        'ftw.contentpage',
+        #'ftw.contentpage',
+	#'ftw.geo',
+	'collective.geo.mapwidget',
     ],
     extras_require={'test': ['plone.app.testing']},
     entry_points="""
