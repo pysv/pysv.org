@@ -37,7 +37,6 @@ setup(
         'collective.behavior.banner',
         'collective.formscaptcha',
         'collective.quickupload',
-        'collective.z3cform.widgets',
         'eea.facetednavigation',
         'ftw.footer',
         'Pillow',
