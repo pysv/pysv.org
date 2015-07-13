@@ -1,16 +1,10 @@
+# -*- coding: utf-8 -*-
+from AccessControl import getSecurityManager
+from plone import api
+from Products.CMFCore import permissions
+from ZODB.POSException import ConflictError
 import logging
 
-# ZODB imports
-from ZODB.POSException import ConflictError
-
-# Zope imports
-from AccessControl import getSecurityManager
-
-# CMFCore imports
-from Products.CMFCore import permissions
-from plone import api
-
-# Logger output for this module
 logger = logging.getLogger(__name__)
 
 INITIAL_LOGIN_LANDING_PAGE = "/mitmachen/willkommen-neu-registriert"

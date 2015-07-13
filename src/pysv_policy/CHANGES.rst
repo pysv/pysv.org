@@ -1,10 +1,10 @@
 Changelog
 =========
 
-2.1
----
+3.0a1
+-----
 
-- Upgrade to Plone 4.3.6 et al. [jensens]
+- Upgrade to Plone 5 bleeding edge [jensens]
 
 2.0
 ---

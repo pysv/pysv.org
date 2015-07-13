@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '2.1'
+version = '3.0a1'
 
 long_description = (
     open('README.rst').read()
@@ -34,29 +34,16 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'collective.behavior.banner',
-        'collective.formscaptcha',
-        'collective.quickupload',
-        'eea.facetednavigation',
-        'ftw.footer',
         'Pillow',
         'Plone',
         'plone.api',
-        'plone.app.contenttypes[atrefs]',
-        'plone.app.event[plone43]',
-        'plone.formwidget.recaptcha',
-        'plonetheme.onegov',
+        'Products.CMFPlone',
+        'Products.PFGDataGrid',
         'Products.PloneFormGen',
         'Products.PloneKeywordManager[Levenshtein]',
         'Products.RedirectionTool',
         'setuptools',
-        'Solgema.fullcalendar',
         'z3c.jbot',
-
-        # legacy, unused, layers left, needs uninstall love
-        #'ftw.contentpage',
-	    #'ftw.geo',
-	    'collective.geo.mapwidget',
     ],
     extras_require={'test': ['plone.app.testing']},
     entry_points="""

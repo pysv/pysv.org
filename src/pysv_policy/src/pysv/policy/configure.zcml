@@ -17,13 +17,6 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
     />
 
-    <genericsetup:importStep
-        name="pysv.policy.various"
-        title="pysv.policy Policy: miscellaneous import steps"
-        description=" "
-        handler="pysv.policy.setuphandlers.importVarious"
-    />
-
     <!-- subscribers -->
     <subscriber
         for="Products.PlonePAS.events.IUserInitialLoginInEvent"

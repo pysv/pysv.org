@@ -11,18 +11,4 @@
       directory="images"
       />
 
-  <include package="plonetheme.onegov" />
-  <theme:add_scss
-        path="pysv.scss" />
-
-    <browser:viewlet
-      name="collective.bannerviewlet"
-      for="plone.dexterity.interfaces.IDexterityContent"
-      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
-      class="collective.behavior.banner.browser.viewlets.BannerViewlet"
-      permission="zope2.View"
-      />
-
-    <!-- <adapter factory=".subjects.SubjectsFieldWidget" /> -->
-
 </configure>
