@@ -1,31 +1,33 @@
 <configure
+    i18n_domain="pysv.theme"
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:theme="http://namespaces.zope.org/plonetheme.onegov"
-    i18n_domain="pysv.theme">
+    xmlns:theme="http://namespaces.zope.org/plonetheme.onegov">
 
   <includeDependencies package="." />
 
-  <include package="z3c.jbot" file="meta.zcml" />
+  <include
+      file="meta.zcml"
+      package="z3c.jbot"
+  />
 
   <browser:templateOverrides directory="jbot" />
+
   <browser:resourceDirectory
-      name="pysv.images"
       directory="images"
-      />
+      name="pysv.images"
+  />
 
   <include package="plonetheme.onegov" />
-  <theme:add_scss
-        path="pysv.scss" />
 
-    <browser:viewlet
-      name="collective.bannerviewlet"
+  <theme:add_scss path="pysv.scss" />
+
+  <browser:viewlet
+      class="collective.behavior.banner.browser.viewlets.BannerViewlet"
       for="plone.dexterity.interfaces.IDexterityContent"
       manager="plone.app.layout.viewlets.interfaces.IAboveContent"
-      class="collective.behavior.banner.browser.viewlets.BannerViewlet"
+      name="collective.bannerviewlet"
       permission="zope2.View"
-      />
-
-    <!-- <adapter factory=".subjects.SubjectsFieldWidget" /> -->
+  />
 
 </configure>
